@@ -1,0 +1,42 @@
+2023-11-17 11:39:16 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-17 11:39:27 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-17 11:39:31 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 11:39:35 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 11:39:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_snowman2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
+2023-11-17 11:39:43 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 11:40:13 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-17 11:40:15 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 11:40:20 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 11:40:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 11:40:30 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 11:40:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 11:40:46 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 11:41:16 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-17 11:41:19 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 11:41:24 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 11:41:24 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 11:41:31 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 11:42:01 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-17 11:42:01 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3866), thread 'MainThread' (140277880769408): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 171, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 167, in run
+    await agent.stash()
+  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 160, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 97, in claim_epic_games
+    if await epic.authorize(page):
+  File "/home/runner/work/epic-game/epic-game/epic/src/epic_games/agent.py", line 261, in authorize
+    raise RuntimeError(f"Failed to flush token - agent={self.__class__.__name__}")
+RuntimeError: Failed to flush token - agent=EpicGames
