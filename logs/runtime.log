@@ -1,23 +1,21 @@
-2023-11-17 11:39:16 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-17 11:39:27 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-11-17 11:39:31 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-17 11:39:35 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-17 11:39:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_snowman2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
-2023-11-17 11:39:43 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
-2023-11-17 11:40:13 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2023-11-17 11:40:15 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-17 11:40:20 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-17 11:40:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
-2023-11-17 11:40:30 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
-2023-11-17 11:40:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
-2023-11-17 11:40:46 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
-2023-11-17 11:41:16 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2023-11-17 11:41:19 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-17 11:41:24 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-17 11:41:24 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
-2023-11-17 11:41:31 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
-2023-11-17 11:42:01 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2023-11-17 11:42:01 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3866), thread 'MainThread' (140277880769408): - {}
+2023-11-18 11:36:06 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-18 11:36:15 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-18 11:36:18 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-18 11:36:22 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-18 11:36:23 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_snowman2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
+2023-11-18 11:36:30 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-18 11:37:00 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-18 11:37:02 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-18 11:37:06 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-18 11:37:06 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_snowman2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
+2023-11-18 11:37:13 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-18 11:37:43 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-18 11:37:45 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-18 11:37:49 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-18 11:37:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_snowman2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
+2023-11-18 11:37:56 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-18 11:38:26 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-18 11:38:26 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3609), thread 'MainThread' (140175550614400): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 171, in <module>
     asyncio.run(run())
