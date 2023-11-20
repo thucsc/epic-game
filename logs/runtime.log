@@ -1,18 +1,18 @@
-2023-11-19 11:36:10 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-19 11:36:17 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-11-19 11:36:19 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 11:36:23 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 11:36:23 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-19 11:36:54 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2023-11-19 11:36:56 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 11:37:00 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 11:37:00 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-19 11:37:32 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2023-11-19 11:37:34 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 11:37:38 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 11:37:38 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-19 11:38:09 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2023-11-19 11:38:09 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3642), thread 'MainThread' (140358579669888): - {}
+2023-11-20 11:36:17 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-20 11:36:24 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-20 11:36:26 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 11:36:30 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 11:36:31 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 11:37:02 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-20 11:37:04 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 11:37:08 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 11:37:08 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 11:37:39 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-20 11:37:42 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 11:37:46 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 11:37:47 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 11:38:18 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-20 11:38:19 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3637), thread 'MainThread' (139970549271424): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 171, in <module>
     asyncio.run(run())
