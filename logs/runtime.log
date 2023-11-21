@@ -1,18 +1,24 @@
-2023-11-20 11:36:17 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-20 11:36:24 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-11-20 11:36:26 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-20 11:36:30 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-20 11:36:31 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-20 11:37:02 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2023-11-20 11:37:04 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-20 11:37:08 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-20 11:37:08 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-20 11:37:39 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2023-11-20 11:37:42 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-20 11:37:46 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-20 11:37:47 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-20 11:38:18 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2023-11-20 11:38:19 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3637), thread 'MainThread' (139970549271424): - {}
+2023-11-21 11:36:24 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.10.0', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-21 11:36:33 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-21 11:36:36 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-21 11:36:40 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-21 11:36:40 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:230 | get task - {'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:36:40 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:240 | handle task - {'match_model': 'resnet', 'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:36:43 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-21 11:37:14 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-21 11:37:15 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-21 11:37:20 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-21 11:37:20 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:230 | get task - {'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:37:20 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:240 | handle task - {'match_model': 'resnet', 'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:37:23 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-21 11:37:53 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-21 11:37:55 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-21 11:37:59 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-21 11:37:59 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:230 | get task - {'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:37:59 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:240 | handle task - {'match_model': 'resnet', 'prompt': 'Please click each image containing a desert'}
+2023-11-21 11:38:02 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-21 11:38:32 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-21 11:38:32 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3984), thread 'MainThread' (140544538041216): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 171, in <module>
     asyncio.run(run())
