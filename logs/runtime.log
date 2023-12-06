@@ -1,7 +1,4 @@
-2023-12-06 00:44:59 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
-2023-12-06 00:45:07 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2023-12-06 00:45:08 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Mighty Fight Federation', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
-2023-12-06 00:45:08 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Jitsu Squad', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
-2023-12-06 00:45:15 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
-2023-12-06 00:45:29 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
-2023-12-06 00:45:44 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2023-12-07 00:45:07 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-12-07 00:45:14 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Mighty Fight Federation', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-07 00:45:14 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Jitsu Squad', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-07 00:45:14 | SUCCESS    | __main__:prelude_with_context:85 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
