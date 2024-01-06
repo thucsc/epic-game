@@ -1,2 +1,4 @@
-2024-01-06 00:43:25 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-06 00:43:32 | SUCCESS    | __main__:prelude_with_context:85 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
+2024-01-07 00:42:10 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-07 00:42:15 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': "Marvel's Guardians of the Galaxy", 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
+2024-01-07 00:42:20 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
+2024-01-07 00:42:33 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
