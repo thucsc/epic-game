@@ -1,5 +1,7 @@
-2024-01-25 00:44:39 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-25 00:45:11 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3614), thread 'MainThread' (139954668170112): - {}
+2024-01-26 00:45:57 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-26 00:46:07 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2024-01-26 00:46:09 | SUCCESS    | epic_games.agent:_login:253 | login - {'result': 'Successfully refreshed tokens'}
+2024-01-26 00:46:42 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3756), thread 'MainThread' (140022998924160): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -15,10 +17,12 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 158, in run
     await agent.stash()
-  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 149, in stash
-    if not await self.prelude_with_context(context):
-  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 73, in prelude_with_context
-    await page.goto(url, wait_until="networkidle")
+  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 151, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/epic-game/epic-game/epic/src/claim.py", line 99, in claim_epic_games
+    cookies = await epic.flush_token(context)
+  File "/home/runner/work/epic-game/epic-game/epic/src/epic_games/agent.py", line 273, in flush_token
+    await page.goto("https://www.epicgames.com/account/personal", wait_until="networkidle")
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9275, in goto
     await self._impl_obj.goto(
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 484, in goto
